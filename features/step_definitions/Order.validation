@@ -1,15 +1,15 @@
 Feature: Order Validation
 
-Scenario: Order with correct data Validation
-    Given Logged user is on the Order page
-    When Logged User enters correct data for order /ProductName/Quantity/DeliveryAddress/CorrectPayMethod
-    Then Order is successfully placed with correct data
-    Then email with order data is sent to User
-    Then User is redirected to pay page
+    Scenario: Order with correct data Validation
+        Given Logged user is on the Order page
+        When Logged User enters correct data for order /ProductName/Quantity/DeliveryAddress/CorrectPayMethod
+        Then Order is successfully placed with correct data
+        Then email with order data is sent to User
+        Then User is redirected to pay page
 
-Scenario:   Order with incorrect data Validation
-    Given Logged user is on the Order page
-    When Logged User enters incorrect data for order any/ProductName/Quantity/DeliveryAddress/IncorrectPayMethod
-    Then Error message is displayed for incorrect data
+    Scenario:   Order with incorrect data Validation
+        Given Logged user is on the Order page
+        When Logged User enters incorrect data for order any/ProductName/Quantity/DeliveryAddress/IncorrectPayMethod
+        Then Error message is displayed for incorrect data
 
     
